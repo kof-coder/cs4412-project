@@ -6,40 +6,34 @@
 
 ## Project Summary
 
-This project explores fatigue-management strategies using data mining techniques. The analysis investigates how **power naps and coffee affect alertness, productivity, and mood** using exploratory data analysis, preprocessing, feature engineering, and **K-Means clustering**.
+In this project, the researcher aims to investigate the techniques of managing fatigue using data mining techniques. The techniques of managing fatigue will be analyzed using techniques of **Exploratory Data Analysis, Preprocessing, Feature Engineering, and K-Mean Clustering**.
 
-The goal is **pattern discovery**, not prediction.
+**Dataset Size:** 500 rows * 11 attributes  
+**Technique Used for Mining:** K-Mean Clustering  
 
-Dataset size: **500 rows × 11 attributes**
-
-Mining technique used: **K-Means Clustering**
-
-## Project Title
-
-**Discovery of Short-Term Fatigue Management Techniques (Power Naps and Coffee)**
+**Project Title:** Discovery of Short-Term Fatigue Management Techniques (Power Naps and Coffee)  
 
 ---
 
 ## Project Goal
 
-The main goal of this project is to discover patterns in the management of fatigue using data mining techniques. It is not a prediction problem. In this project, the main aim is to discover the effects of power naps and coffee on the management of fatigue.
+The overall goal of the project is to discover the techniques of managing fatigue using data mining techniques. This is not a prediction problem. In this project, the overall goal is to discover the techniques of managing fatigue using power naps and coffee.  
 
 ---
 
 ## Dataset
 
-The dataset used in this project has **500 rows and 11 columns**, with the following attributes:
-
-* sleep_hours_previous_night  
-* intervention_type  
-* intervention_duration_minutes  
+In this project, the researcher uses a dataset of **size 500 rows * 11 attributes**. The attributes of the dataset are as follows:  
+sleep_hours_previous_night  
+intervention_type  
+intervention_duration_minutes
 * alertness_before  
 * alertness_after  
 * productivity  
 * mood  
 * side_effects  
 
-The dataset is about the management of fatigue, and each row in the dataset is a single session in the management of fatigue.
+The dataset is related to the management of fatigue, and each row represents a session in the management of fatigue.
 
 ---
 
@@ -49,7 +43,7 @@ The dataset is about the management of fatigue, and each row in the dataset is a
 The raw data.
 
 ### data/processed
-The cleaned data and the clustered data used in the mining process.
+The clean data and clustered data used in the mining process.
 
 ### notebooks
 The Jupyter notebook used in the implementation.
@@ -64,22 +58,21 @@ The project summary.
 
 ## Mining Technique Used
 
-**K-Means Clustering**
+**K-MEANS Clustering**
 
-The steps followed in the mining process are as follows:
-
+The steps followed in the mining process:
 1. Data preprocessing  
 2. Feature engineering  
 3. Standardization  
 4. Silhouette method  
-5. K-Means Clustering  
+5. K-MEANS Clustering  
 6. Cluster interpretation  
 
 ---
 
 ## Key Insight Example
 
-The initial results obtained indicate that power naps are effective in improving alertness compared to the effects of coffee, although the effects on productivity and moods are similar.
+The initial results obtained show that power naps have positive effects on improving alertness compared to the effect of coffee, though they have similar effects on productivity and moods.
 
 ---
 
