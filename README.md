@@ -1,9 +1,18 @@
 # CS 4412 — Data Mining Project
-## Module 2: Initial Implementation
 
-**Author:** Kofi Ofori-Acquah
+**Course:** CS 4412 Data Mining  
+**Module:** M2 Initial Implementation  
+**Author:** Kofi Ofori-Acquah  
 
----
+## Project Summary
+
+This project explores fatigue-management strategies using data mining techniques. The analysis investigates how **power naps and coffee affect alertness, productivity, and mood** using exploratory data analysis, preprocessing, feature engineering, and **K-Means clustering**.
+
+The goal is **pattern discovery**, not prediction.
+
+Dataset size: **500 rows × 11 attributes**
+
+Mining technique used: **K-Means Clustering**
 
 ## Project Title
 
