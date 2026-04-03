@@ -1,90 +1,75 @@
 # CS 4412 - Data Mining Project
 
 **Course:** CS 4412 Data Mining  
-**Module:** M2 Initial Implementation  
+**Current milestone:** M3 Complete Implementation  
 **Author:** Kofi Ofori-Acquah  
 
 ## Project Summary
 
-The project is centered on the application of the techniques of data mining in the discovery of the techniques used in the management of fatigue. The project is centered on the discovery of the effects of power naps and coffee on alertness, productivity, and moods using the techniques of exploratory data analysis, preprocessing, feature engineering, and K-Means Clustering.
+The project examines the aspects of fatigue, sleep quality, and lifestyle patterns using the concepts of data mining for **discovery**, not prediction.  
+The project was based on a simulated fatigue management dataset during the M2 milestone. However, the M3 milestone expands the project using a **real-world sleep and lifestyle dataset** to produce stronger and more realistic results.  
 
-The project is centered on the **discovery**, not prediction.
+The current implementation for the M3 milestone includes:
+- clustering comparison (**K-Means, Agglomerative, DBSCAN**)
+- **PCA** for low-dimensional visualization
+- **Decision Tree** and **Naive Bayes** for interpretable class-based analysis
+- **Association rules** for co-occurrence patterns
+- **LOF anomaly detection** for unusual sleep health patterns
 
-**Dataset used in the project:** 500 rows x 11 attributes  
-**Technique used in the project:** K-Means Clustering  
+## Datasets
 
-## Project Title
+### M2 dataset
+- `data/raw/power_nap_vs_coffee_effectiveness_dataset.csv`
+- Simulated fatigue management sessions on the effectiveness of power naps versus coffee
 
-Discovery of Short-Term Fatigue Management Techniques - Power Naps and Coffee  
+### M3 dataset
+- `data/raw/Sleep_health_and_lifestyle_dataset.csv`
+- Real-world sleep health and lifestyle patterns with various attributes like demographics, occupation, stress, BMI, blood pressure, heart rate, steps, and sleep disorders
 
----
+## Repository Structure
 
-## Project Goal
+```text
+cs4412-project/
+├── README.md
+├── data/
+│   ├── raw/
+│   └── processed/
+├── notebooks/
+├──
+└── docs/
+### M3 Techniques Utilized
 
-The main goal of the project is to discover the patterns in the management of fatigue using the techniques of data mining. The project is not centered on prediction. In this project, the main goal is to discover the effects of power naps and coffee in the management of fatigue.
+1. Data cleaning and preprocessing  
+2. Feature extraction using blood pressure readings  
+3. Standardization of numeric features  
+4. Clustering method comparison using silhouette score  
+5. PCA visualization support  
+6. Decision Tree and Naive Bayes for classification  
+7. Association rule mining using discretized features  
+8. LOF for anomaly detection  
+9. Interpreting results in relation to discovery questions  
 
----
+### Key Findings from M3 Techniques Utilized
 
-## Dataset
+- The optimal value for K was found to be 6 with a K-Means silhouette score of 0.537.  
+- Agglomerative clustering performed slightly better than K-Means with a 0.540 silhouette score.  
+- Dense local structure was found using DBSCAN with a cluster of noise points.  
+- 18 anomalies were found using LOF.  
+- Decision Tree and Naive Bayes classification models were found to have very high agreement with K-Means cluster labels.  
 
-The dataset used in the project has 500 rows x 11 attributes with the following attributes:
+### M3 Deliverables in this Repository
 
-* sleep_hours_previous_night  
-* intervention_type  
-* intervention_duration_minutes  
-* alertness_before  
-* alertness_after  
-* productivity  
-* mood  
-* side_effects  
+- `notebooks/CS4412_M3_Complete_Implementation.ipynb`
+- `docs/CS4412_M3_Analysis_Document.pdf`
+- `outputs/association_rules_m3.csv`
+- `outputs/clustering_method_comparison_m3.csv`
+- `outputs/cluster_profile_numeric_m3.csv`
+- `outputs/cluster_profile_categorical_modes_m3.csv`
+- `outputs/lof_anomalies_m3.csv`
+- `outputs/decision_tree_feature_importance_m3.csv`
+- `outputs/pca_explained_variance_m3.csv`
 
-The data is related to the management of fatigue, and all the data is related to the management of fatigue.  
+### Notes on Deliverables for M3
 
----
-
-## Project Structure
-
-### data/raw  
-The raw data is kept here.  
-
-### data/processed  
-The processed data and the clustered data used in the mining process are kept here.  
-
-### notebooks  
-The Jupyter notebook related to the implementation is kept here.  
-
-### outputs  
-The cluster profile and the results obtained in the mining process are kept here.  
-
-### docs  
-The summary of the project is kept here.  
-
----
-
-## Mining Technique Used
-
-**K-MEANS CLUSTERING**
-
-The steps involved in the mining process are as follows:
-
-1. Data preprocessing  
-2. Feature engineering  
-3. Standardization  
-4. Silhouette method  
-5. K-MEANS CLUSTERING  
-6. Cluster interpretation  
-
----
-
-## Key Insight Example
-
-The results obtained show that power naps are effective in improving alertness compared to the effect of coffee, although the effect of both is similar on productivity and moods.  
-
----
-
-## Future Work (M3)
-
-* Association mining  
-* Anomaly detection  
-* PCA visualization  
-* Comparison of other clustering techniques
+- Files from M2 were retained to ensure consistency.  
+-
