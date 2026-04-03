@@ -1,0 +1,4 @@
+method,silhouette_score
+DBSCAN,0.8858362617529735
+Agglomerative,0.5397171754127378
+KMeans,0.5370027807989349

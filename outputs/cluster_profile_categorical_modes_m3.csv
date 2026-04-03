@@ -1,0 +1,7 @@
+kmeans_cluster,gender,occupation,bmi_category,sleep_disorder
+0,Male,Doctor,Normal,None
+1,Male,Doctor,Overweight,Insomnia
+2,Female,Nurse,Overweight,Sleep Apnea
+3,Female,Nurse,Overweight,Sleep Apnea
+4,Male,Lawyer,Normal,None
+5,Female,Engineer,Normal,None

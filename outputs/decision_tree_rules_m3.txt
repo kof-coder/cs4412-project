@@ -1,0 +1,28 @@
+|--- systolic_bp <= 123.50
+|   |--- sleep_duration <= 6.45
+|   |   |--- class: 1
+|   |--- sleep_duration >  6.45
+|   |   |--- class: 0
+|--- systolic_bp >  123.50
+|   |--- heart_rate <= 71.00
+|   |   |--- stress_level <= 3.50
+|   |   |   |--- systolic_bp <= 132.50
+|   |   |   |   |--- class: 5
+|   |   |   |--- systolic_bp >  132.50
+|   |   |   |   |--- class: 3
+|   |   |--- stress_level >  3.50
+|   |   |   |--- diastolic_bp <= 84.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- diastolic_bp >  84.50
+|   |   |   |   |--- class: 4
+|   |--- heart_rate >  71.00
+|   |   |--- physical_activity_level <= 70.00
+|   |   |   |--- age <= 49.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- age >  49.50
+|   |   |   |   |--- class: 1
+|   |   |--- physical_activity_level >  70.00
+|   |   |   |--- quality_of_sleep <= 7.50
+|   |   |   |   |--- class: 2
+|   |   |   |--- quality_of_sleep >  7.50
+|   |   |   |   |--- class: 3

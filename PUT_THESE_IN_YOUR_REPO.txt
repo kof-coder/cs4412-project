@@ -1,0 +1,34 @@
+PUT THESE FILES/FOLDERS INTO YOUR REPO ROOT
+
+1. Replace your repo README with:
+   README.md
+
+2. Put the M3 notebook here:
+   notebooks/CS4412_M3_Complete_Implementation.ipynb
+
+3. Put the M3 analysis PDF here:
+   docs/CS4412_M3_Analysis_Document.pdf
+
+4. Put the new real dataset here:
+   data/raw/Sleep_health_and_lifestyle_dataset.csv
+
+5. Keep the earlier M1 and M2 docs here:
+   docs/M1_Project_Proposal.pdf
+   docs/CS4412_M2_Summary.pdf
+
+6. Put the new processed M3 data here:
+   data/processed/sleep_health_processed_full.csv
+
+7. Put the M3 result files here:
+   outputs/association_rules_m3.csv
+   outputs/clustering_method_comparison_m3.csv
+   outputs/cluster_profile_numeric_m3.csv
+   outputs/cluster_profile_categorical_modes_m3.csv
+   outputs/decision_tree_feature_importance_m3.csv
+   outputs/decision_tree_rules_m3.txt
+   outputs/lof_anomalies_m3.csv
+   outputs/pca_explained_variance_m3.csv
+   outputs/sleep_health_m3_full_results.csv
+
+8. Easiest option:
+   unzip cs4412_m3_repo_ready.zip into your repo root and merge the folders.
