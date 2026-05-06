@@ -1,54 +1,23 @@
-Final Deliverables for M4 Milestone
-This repository represents the final deliverables for M4, focusing on professional representation, reproducibility, and critical assessment.
-Final Deliverables
-•	reports/CS4412_Kofi_Ofori_Acquah_M4_Final_Report.pdf 
-•	slides/CS4412_Kofi_Ofori_Acquah_Presentation.pdf 
-•	video/CS4412_Kofi_Ofori_Acquah_Presentation.mp4 (or link if hosted externally) 
-________________________________________
-Discovery Questions (Final)
-1.	What natural sleep-health segments exist in the dataset? 
-2.	Which features distinguish those segments? 
-3.	Which profiles are anomalous compared to similar individuals? 
-________________________________________
-Final Findings Summary
-•	Clustered and found 6 distinct lifestyle-health segments 
-•	Key differentiators: systolic blood pressure, heart rate, stress level, physical activity 
-•	PCA preserved ~70% variance 
-•	Found ~5% anomalous profiles (~18 records) via LOF 
-•	Used Decision Tree to extract explainable rules 
-________________________________________
-How to Run This Project
-1.	Install dependencies: 
-pip install -r requirements.txt
-2.	Launch Jupyter: 
-jupyter notebook
-3.	Run: 
-notebooks/CS4412_M3_Complete_Implementation.ipynb
-________________________________________
-Critical Assessment (Summary)
-Validity
-•	Structure of discovered clusters backed by K-Means and Agglomerative clustering 
-•	PCA visualization backed results 
-•	Results appear valid but aren’t conclusive 
+Final Deliverables for M4 Milestone The following is the complete collection of deliverables pertaining to the M4 milestone in terms of professional representation, reproducibility, and critical evaluation. Final Deliverables • reports/CS4412_Kofi_Ofori_Acquah_M4_Final_Report.pdf • slides/CS4412_Kofi_Ofori_Acquah_Presentation.pdf • video/CS4412_Kofi_Ofori_Acquah_Presentation.mp4 (or link if stored outside the repo)
 
-Limitations
-•	Unsupervised learning: no labeled ground truth 
-•	Dependent on preprocessing and parameters 
-•	Observational study design → association, not causation 
-•	Moderate size of dataset → generalizability concerns 
-________________________________________
-Ethical Considerations
-•	Sleep and health data must be treated
-• Findings cannot be applied in making medical decisions
-•	Possibility of bias among occupational/lifestyle categories 
-•	Best application: generating knowledge, not personal opinions
-_________________________________________
-Future Directions
-•	Clearer semantic interpretation of clusters  
-•	Further validation on bigger data sets 
-•	Conduct anomaly detection analysis  
-•	Examine longitudinal sleep trends 
-___________________________________________
-Miscellaneous
-•	M2 files kept for consistency reasons 
-•	M4 file denotes the final, portfolio-quality document
+Discovery Questions (Final)
+
+What natural segments related to sleep health exist in the dataset?
+What are the differences that characterize those segments?
+Whose sleep and health profiles are outliers compared to people like them?
+Final Discovery Question Answers Summary • Discovered six distinct lifestyle-health segments through clustering • Differentiating factors include systolic blood pressure, heart rate, stress, exercise frequency • ~70% variance retained through PCA analysis • ~5% outlier profiles identified using LOF (~18 records) • Decision Trees used for extraction of meaningful rules
+
+How to Run This Project
+
+Dependencies: pip install -r requirements.txt
+To run: jupyter notebook, then notebooks/CS4412_M3_Complete_Implementation.ipynb
+Critical Evaluation (Summary) Validity • Clustering structure supported by K-Means and Agglomerative clustering • Results supported through visualization via PCA • Results seem valid but not conclusive
+
+Limitations • No ground truth due to unsupervised learning • Highly dependent on parameters and preprocessing • Observational study means only association rather than causation • Not sufficiently large dataset raises generalizability concerns
+
+Ethical Considerations • Sleep and health data should be handled accordingly • Cannot apply findings in any medical decision making • Potential biases among occupations or lifestyle groups • Good use of findings is in generating information, not opinion
+
+Further Research Directions • Semantic explanation of segments
+• Validation on larger datasets • Outliers analysis • Longitudinal trends of sleep health patterns
+
+Miscellaneous • M2-related files maintained for consistency • M4 is final portfolio-level document
